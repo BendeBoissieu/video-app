@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+
+
+const API_KEY = 'AIzaSyAXQLC_rYPx914X-BOWDNHCZ_BlC3XpK_c';
+// Create a new component. This component should produce some html
+
+const App = () => {
+  return <div>Hi! </div>;
+}
+
+
+// Generate this html and put it on the DOM
+
+ReactDOM.render(<App />, document.querySelector('.container'));
