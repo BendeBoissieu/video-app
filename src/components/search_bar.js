@@ -26,7 +26,7 @@ class SearchBar extends Component{
       );
   }
 
-//Refactoring onChange={this.onInputChange}
+// Refactoring onChange={this.onInputChange}
 /*  onInputChange(eventObject) {
     console.log(eventObject.target.value);
 
