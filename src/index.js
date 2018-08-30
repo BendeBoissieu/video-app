@@ -4,7 +4,7 @@ import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import YTSearch from 'youtube-api-search';
 
-const API_KEY;
+const API_KEY=
 
 
 
@@ -17,7 +17,7 @@ class App extends Component{
     super(props);
 
     this.state = { videos:[]};
-    YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
+    YTSearch({key: API_KEY, term: 'Benjamin de Boissieu'}, (videos) => {
       this.setState({videos});
       console.log(videos);
       //this.setState({videos: videos}) when key is equal to the propertie
