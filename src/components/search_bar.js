@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 // functionnal component
 /*const SearchBar = () => {
   return <input />;
@@ -19,7 +20,7 @@ class SearchBar extends Component{
     return (
 /*      exemple to see the value
       value={this.state.term}*/
-      <div>
+      <div className="search-bar">
       <input onChange={eventObject =>  this.setState({ term: eventObject.target.value})} />
       Value of the input: {this.state.term}
       </div>

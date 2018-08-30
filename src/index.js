@@ -5,7 +5,8 @@ import VideoList from './components/video_list';
 import YTSearch from 'youtube-api-search';
 import VideoDetail from './components/video_detail';
 
-const API_KEY=;
+
+const API_KEY='';
 
 
 
