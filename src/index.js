@@ -22,8 +22,12 @@ class App extends Component{
       videos:[],
       selectedVideo: null
     };
+    //initialization of videoSearch
+    this.videoSearch('Benjamin de Boissieu');
+   }
 
-    YTSearch({key: API_KEY, term: 'Benjamin de Boissieu'}, (videos) => {
+  videoSearch(term) {
+    YTSearch({key: API_KEY, term: term}, (videos) => {
       this.setState({
         videos: videos,
         selectedVideo: videos[0]
@@ -31,11 +35,12 @@ class App extends Component{
 
       //this.setState({videos: videos}) when key is equal to the propertie
     });
+
   }
   render(){
     return(
       <div>
-      <SearchBar />
+      <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
       <VideoDetail video={this.state.selectedVideo}/>
       <VideoList
       onVideoSelect={selectedVideo => this.setState({selectedVideo})}
