@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500|Rubik:300,400,700,900");
+
+// Define fonts for body and headers
+$body-font: "Open Sans", "Helvetica", "sans-serif";
+$headers-font: "Rubik", "Helvetica", "sans-serif";
+
+.banimage{
+  background-image:url('https://previews.123rf.com/images/rvlsoft/rvlsoft1210/rvlsoft121000060/15802816-big-hamburger-on-white-background.jpg');
+  opacity: 0.4;
+
+}
+
+
 .search-bar {
   display: block;
   padding-top: 25px;
@@ -37,5 +50,18 @@
 }
 
 .container{
-  background-color: lightgrey;
+  background-color: #eef0f2;
+  width: 150vh !important;
+  height: 900px;
+
+
 }
+
+.title h1{
+  text-align: center;
+  color: purple;
+  padding-top: 25px;
+  font-size: 75px;
+
+}
+
