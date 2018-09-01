@@ -1,6 +1,7 @@
 import _ from 'lodash'; //lodash allow to don t refresh the page on every search
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Title from './components/title';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import YTSearch from 'youtube-api-search';
@@ -42,6 +43,7 @@ class App extends Component{
     const videoSearch =_.debounce((term) => {this.videoSearch(term)}, 300);
     return(
       <div>
+      <Title />
       <SearchBar onSearchTermChange={videoSearch} />
       <VideoDetail video={this.state.selectedVideo}/>
       <VideoList
